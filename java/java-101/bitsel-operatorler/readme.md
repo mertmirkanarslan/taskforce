@@ -7,6 +7,8 @@ Java&#39;da bitsel operatörler bit düzeyinde işlemler yapabilmeyi sağlar. Bi
 19 sayısının temsili = 10011
 200.000 sayısının temsili ise =  110000110101000000 olarak tutulur.
 
+//
+
 #Java'da negatif tamsayılar nasıl tutulur?
 
 Negatif tamsayılar ise ikili (binary) sistemde ikinin tümleyeni biçiminde tutulur. 
@@ -18,14 +20,16 @@ Bir tamsayının negatifini bulmak için aşağıdaki adımlar izlenir:
 4. Son olarak sayıya 1 ekleyerek sayının tümleyenini buluyoruz.
 5. Sayımız x ise tümleyenimiz bunun negatifi, yani -x'tir.
 
-Bunu 15 sayısı için hep birlikte yapalım: (15)10 = (1111)2
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Bunu 15 sayısı için hep birlikte yapalım: 
+(15)10 = (1111)2
 15 = 0000 0000 0000 0000 0000 0000 0000 1111  //Sayımızı 32 bitlik adresine yerleştirdik.
 ~15 = 1111 1111 1111 1111 1111 1111 1111 0000  //Yerleştirdiğimiz sayıda 1'leri 0, 0'ları ise 1 olarak yeniden düzenledik. 
 ~15 + 1 = 1111 1111 1111 1111 1111 1111 1111 0001 //Sonuca 1 ekledik.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Bunu koda dökersek:
+
+
 `````java
 public class Reverse {
 
@@ -38,12 +42,17 @@ public class Reverse {
 }
 
 `````
+
+
 Output:
----------------------------------------------
+
 Pozitif olarak girilen sayı: 15
 Sayının negatif karşılığı: -15
----------------------------------------------
-Burada x değeriyle 
+
+
+   Burada x değeriyle 15 sayısı hard-coded olarak girilmiş ve y değerinde hard-coded olarak sayının negatif karşılığının nasıl yazdırıldığına dair örnek verilmiştir. Sonda ise her iki değer yazdırılmıştır.
+
+
 
 Bitsel operatörler int ve long tipleri üzerinde işlerler. İşleme giren sayılar (operand) byte ya da short tipinden ise, önce onlar int tipine dönüştürülür, sonra bitsel operatör uygulanır.
 Aşağıdaki tabloda, bitsel operatörlerin bit’ler üzerinde etkisini gösterilmiştir. a ve b iki sayı ise, karşılıklı bitlerindeki etki şöyledir:
@@ -178,3 +187,5 @@ https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op3.html
 https://ramazanbiyikci.com.tr/java-bitsel-operatorler/
 https://www.baeldung.com/java-bitwise-operators
 https://www.youtube.com/watch?v=dccIw612Q2k
+
+//
