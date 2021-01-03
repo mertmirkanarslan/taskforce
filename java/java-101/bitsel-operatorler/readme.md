@@ -34,10 +34,12 @@ Bunu koda dökersek:
 public class Reverse {
 
    public static void main(String[] args) {
- int x = 15;
- int y = ~15 + 1;
- System.out.println("Pozitif olarak girilen sayı: " + x);
- System.out.println("Sayının negatif karşılığı: " + y);
+   
+   int x = 15;
+   int y = ~15 + 1;
+   
+   System.out.println("Pozitif olarak girilen sayı: " + x);
+   System.out.println("Sayının negatif karşılığı: " + y);
    }
 }
 
@@ -123,10 +125,15 @@ public class Bitwise1 {
    byte b = 10;
    
    System.out.println(a | b);
+   
    System.out.println(a & b);
+   
    System.out.println(a ^ b);
+   
    System.out.println( ~ a);
+   
    System.out.println(b << 2);
+   
    }
 }
 `````
@@ -142,10 +149,13 @@ public class Bitwise2 {
    public static void main(String[] a) { 
       int i = 1; 
       System.out.println(i); 
+      
       int j = ~i + 1; 
       System.out.println(j); 
+      
       i = ~j + 1; 
       System.out.println(i); 
+      
       }
 }
 `````
@@ -159,14 +169,19 @@ Output:
 // byte tipi sayının sola kayması ile ilgili örnek. 
 
 public class BitwiseLeftShift {
-public static void main(String[] args) {
+   public static void main(String[] args) {
+   
    byte x = 100, y;
    int i;
    i = a << 2;
    y = (byte) (x << 2);
+   
    System.out.println("x'in asıl değeri : " + x);
+   
    System.out.println("(x << 2) değeri : " + (x << 2));
+   
    System.out.println("(byte)(x << 2) değeri : " + (byte)(x << 2));
+   
    }
 }
 `````
@@ -178,7 +193,7 @@ x'in asıl değeri : 100
 
 //
 
-
+//
 
 (KAYNAK: Aşağıdaki kaynaklar okundu ve taranarak örnekleme ve açıklamalar yapıldı.)
 http://www.baskent.edu.tr/~tkaracay/etudio/ders/prg/java/ch06/bitwiseOperators.pdf
